@@ -1,0 +1,15 @@
+export {
+  faBars,
+  faBell,
+  faChevronLeft,
+  faChevronRight,
+  faCircle,
+  faCoffee,
+  faEdit,
+  faHome,
+  faMagnifyingGlass,
+  faTrashCan,
+  faUser,
+  faWarning,
+  faXmark,
+} from "@fortawesome/free-solid-svg-icons"
