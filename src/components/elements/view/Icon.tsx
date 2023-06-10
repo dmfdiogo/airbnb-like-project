@@ -14,7 +14,7 @@ const Icon = ({ onClick, name, className }: IconProps) => {
   const { definition } = useIcons({ name })
 
   return (
-    <div onClick={onClick} className={className ?? "text-black text-3xl"}>
+    <div onClick={onClick} className={className ?? "text-2xl text-black"}>
       <FontAwesomeIcon icon={definition} />
     </div>
   )

@@ -16,25 +16,27 @@ const UserMenu = () => {
       <div className="flex flex-row items-center gap-3">
         <div
           onClick={() => {}}
-          className="hidden md:block text-sm font-semibold py-3 px-4 rounded-full hover:bg-neutral-200 transition cursor-pointer]"
+          className="hidden cursor-pointer rounded-full px-4 py-3 text-sm font-semibold transition hover:bg-neutral-200 md:block"
         >
           Airbnb your home
         </div>
         <div
           onClick={toggleOpen}
-          className="p4 md:py-1 md:px-2 border-2 border-neutral-200 flex flex-row items-center"
+          className="flex cursor-pointer flex-row items-center gap-3 rounded-full border-[1px] border-neutral-200 p-4 transition hover:shadow-md md:px-2 md:py-1"
         >
-          <div className="cursor-pointer text-gray-600">
-            <Icon name={"faBars"} onClick={() => {}} />
-          </div>
+          <Icon
+            className=" cursor-pointer px-2 text-2xl text-darkgray"
+            name={"faBars"}
+            onClick={() => {}}
+          />
           <div className="hidden md:block">
             <Avatar />
           </div>
         </div>
       </div>
       {isOpen && (
-        <div className="absolute rounded-xl shadow-md w-[40vw] md:w-3/4 bg-white overflow-hidden right-0 top-12 text-sm">
-          <div className="flex flex-col cursor-pointer">
+        <div className="absolute right-0 top-12 w-[40vw] overflow-hidden rounded-xl bg-white text-sm shadow-md md:w-3/4">
+          <div className="flex cursor-pointer flex-col">
             <>
               <MenuItem onClick={() => {}} label={"Login"} />
               <MenuItem onClick={() => {}} label={"Sign up"} />
